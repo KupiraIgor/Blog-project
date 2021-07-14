@@ -270,6 +270,7 @@ body.lock {
     background: #191919;
     overflow: auto;
     z-index: 50;
+    padding-bottom: 30px;
   }
   .menu__body.active {
     transition: all 0.5s ease 0s;
