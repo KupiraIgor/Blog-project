@@ -186,12 +186,10 @@ body.lock {
 }
 .nav__close span:first-child {
   transform: rotate(45deg);
-  top: 7;
 }
 .nav__close span:last-child {
   transform: rotate(-45deg);
   top: auto;
-  bottom: 7;
 }
 
 .header__list-menu {
@@ -245,6 +243,10 @@ body.lock {
   top: auto;
   bottom: 0;
 }
+.header__links {
+  display: none;
+  color: #a6a6a6;
+}
 @media (max-width: 992px) {
   .header__list-menu li {
     padding: 0 15px;
@@ -258,6 +260,7 @@ body.lock {
     display: block;
   }
   .menu__body {
+    font-size: 17px;
     display: block;
     position: fixed;
     top: 0;
@@ -272,13 +275,18 @@ body.lock {
     transition: all 0.5s ease 0s;
     right: 0;
   }
+  .header__links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 35px 0 20px;
+  }
   .header__list-menu {
     display: block;
     padding: 35px 0;
   }
   .header__list-menu li {
     padding: 15px 25px;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     color: #a6a6a6;
     border-top: 1px solid rgba(255, 255, 255, 0.03);
